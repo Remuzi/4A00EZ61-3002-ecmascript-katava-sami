@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Page</title>
+</head>
+<body>
+<script>
+  console.log(this)
+  console.log(this == window)
+  // this and window refers to same object
+  this.key1 = "donald duck" // makes key1 and its value is donald duck
+  window.key2 = "mickey mouse" // makes key2 and its value is mickey mouse
+  var key3 = "uncle scrooge"
+
+  for (let x in this) {
+    document.write("<p>" + "key = " + x + "</p>")
+    document.write("<p>" + "value = " + this[x]  + "</p>")
+  }
+</script>
+</body>
+</html>
